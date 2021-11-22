@@ -41,7 +41,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["@types/node", "npm:16.11.9"],
-            ["@types/react", "npm:17.0.36"]
+            ["@types/react", "npm:17.0.36"],
+            ["typescript", "patch:typescript@npm%3A4.5.2#~builtin<compat/typescript>::version=4.5.2&hash=ddd1e8"]
           ],
           "linkType": "SOFT",
         }]
@@ -105,13 +106,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT",
         }]
       ]],
+      ["typescript", [
+        ["patch:typescript@npm%3A4.5.2#~builtin<compat/typescript>::version=4.5.2&hash=ddd1e8", {
+          "packageLocation": "./.yarn/cache/typescript-patch-04b86b0e5c-24a439e062.zip/node_modules/typescript/",
+          "packageDependencies": [
+            ["typescript", "patch:typescript@npm%3A4.5.2#~builtin<compat/typescript>::version=4.5.2&hash=ddd1e8"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["workspace-bug", [
         ["workspace:.", {
           "packageLocation": "./",
           "packageDependencies": [
             ["workspace-bug", "workspace:."],
             ["@types/node", "npm:16.11.9"],
-            ["@types/react", "npm:17.0.36"]
+            ["@types/react", "npm:17.0.36"],
+            ["typescript", "patch:typescript@npm%3A4.5.2#~builtin<compat/typescript>::version=4.5.2&hash=ddd1e8"]
           ],
           "linkType": "SOFT",
         }]
